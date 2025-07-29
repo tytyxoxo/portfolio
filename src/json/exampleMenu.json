@@ -1,0 +1,40 @@
+[
+  {
+    "name": "public",
+    "type": "folder",
+    "url": "/public",
+    "children": [
+      { "name": "home.html", "type": "file", "url": "/home" },
+      { "name": "about.ico", "type": "file", "url": "/about" }
+    ]
+  },
+  {
+    "name": "src",
+    "type": "folder",
+    "url": "/src",
+    "children": [
+      {
+        "name": "components",
+        "type": "folder",
+        "url": "/home/folder",
+        "children": [
+          { "name": "Button.jsx", "type": "file", "url": "/about/button" },
+          { "name": "Modal.js", "type": "file", "url": "/about/modal" }
+        ]
+      },
+      {
+        "name": "hooks",
+        "type": "folder",
+        "url": "/home/hooks",
+        "children": [
+          { "name": "useFetch.js", "type": "file", "url": "/home/usefetch" }
+        ]
+      },
+      { "name": "App.jsx", "type": "file", "url": "/about/app" },
+      { "name": "index.js", "type": "file", "url": "/about/index" },
+      { "name": "styles.css", "type": "file", "url": "/about/styles" }
+    ]
+  },
+  { "name": "package.json", "type": "file", "url": "/about/package" },
+  { "name": "README.md", "type": "file", "url": "/about/readme" }
+]
