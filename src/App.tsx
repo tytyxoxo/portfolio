@@ -1,18 +1,24 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import MainLayout from "./layouts/MainLayout";
 import NotFound from "./pages/Error";
+import LayoutWrapper from "./layouts/LayoutWrapper";
+import HappyBirthDay from "./pages/hbd/HappyBirthDay";
+import Password from "./pages/hbd/Password";
+import UnlockedGallery from "./pages/hbd/Unlocked";
 
 export default function App() {
   return (
-    <MainLayout>
+    <LayoutWrapper>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} /> {/* Catch-all 404 */}
+        <Route path="/happybirthday" element={<HappyBirthDay />} />
+        <Route path="/happybirthday/password" element={<Password />} />
+        <Route path="/happybirthday/unlocked" element={<UnlockedGallery />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 */}
       </Routes>
-    </MainLayout>
+    </LayoutWrapper>
   );
 }

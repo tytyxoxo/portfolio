@@ -3,30 +3,42 @@
     "name": "Home",
     "type": "file",
     "url": "/home",
-    "desc": "Home Page Description"
+    "desc": "Home Page Description",
+    "visible": true
+  },
+  {
+    "name": "HappyBirthday",
+    "type": "file",
+    "url": "/happybirthday",
+    "desc": "Happy Birthday Page",
+    "visible": true
   },
   {
     "name": "About",
     "type": "file",
     "url": "/about",
-    "desc": "About Page Description"
+    "desc": "About Page Description",
+    "visible": false
   },
   {
     "name": "Components",
     "type": "folder",
     "url": "/components",
+    "visible": false,
     "children": [
       {
         "name": "Button.jsx",
         "type": "file",
         "url": "/components/button",
-        "desc": "Button Component Example"
+        "desc": "Button Component Example",
+        "visible": false
       },
       {
         "name": "Modal.js",
         "type": "file",
         "url": "/components/modal",
-        "desc": "Modal Component Example"
+        "desc": "Modal Component Example",
+        "visible": false
       }
     ]
   },
@@ -34,6 +46,7 @@
     "name": "Contact",
     "type": "file",
     "url": "/contact",
-    "desc": "Contact Description"
+    "desc": "Contact Description",
+    "visible": false
   }
 ]
