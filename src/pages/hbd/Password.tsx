@@ -49,7 +49,7 @@ export default function Password() {
       </form>
 
       <p className="mt-6 text-gray-600 dark:text-gray-300 text-sm">
-        Hint: Use the special birthday code 🎂
+        Hint: Your birthday 🎂
       </p>
     </div>
   );
