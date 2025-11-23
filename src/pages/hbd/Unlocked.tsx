@@ -49,7 +49,7 @@ export default function UnlockedGallery() {
   return (
     <div className="min-h-screen p-6 flex flex-col items-center bg-gradient-to-tr from-pink-100 via-purple-100 to-yellow-100 overfloyw-y-auto">
       <h1 className="text-4xl font-bold mb-6 text-pink-600 animate-pulse">
-        Birthday Memories Gallery
+        Memories Gallery
       </h1>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full max-w-6xl">
@@ -107,7 +107,7 @@ export default function UnlockedGallery() {
         onClick={() => navigate("/happybirthday/message")}
         className="mt-10 px-6 py-3 bg-pink-500 text-white font-semibold rounded-lg shadow-md hover:bg-pink-600 transition"
       >
-        Next →
+        ไปกันต่อ →
       </button>
     </div>
   );

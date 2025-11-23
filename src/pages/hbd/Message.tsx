@@ -45,20 +45,20 @@ export default function MessagePage() {
             ))}
           </div>
         </div>
-        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 mt-40 z-20">
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 mt-44 z-20">
           {!open ? (
             <button
               onClick={() => setOpen(true)}
               className="px-6 py-3 text-nowrap bg-pink-500 text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-pink-600 transition transform hover:scale-105"
             >
-              Open Your Mail
+              เปิดจดหมาย 💌
             </button>
           ) : (
             <button
               onClick={() => setOpen(false)}
-              className="px-6 py-3 bg-pink-500 text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-pink-600 transition transform hover:scale-105"
+              className="px-6 py-3 bg-pink-500 text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-pink-600 transition transform hover:scale-105 text-nowrap"
             >
-              Close Mail
+              ปิดจดหมาย 💌
             </button>
           )}
         </div>
@@ -76,19 +76,28 @@ export default function MessagePage() {
       >
         <div
           className="
-            w-80 bg-white p-6 rounded-xl shadow-xl border-2 border-pink-200 text-center
-            bg-[url('https://www.transparenttextures.com/patterns/cream-pixels.png')]
-            bg-repeat
-          "
+    w-80 bg-white p-6 rounded-xl shadow-xl border-2 border-pink-200
+    bg-[url('https://www.transparenttextures.com/patterns/cream-pixels.png')]
+    bg-repeat
+    flex flex-col
+  "
           style={{ backgroundColor: "#fffdf7" }}
         >
-          <p className="text-lg text-pink-700 leading-relaxed">
-            💖 Happy Birthday! Wishing you a day filled with joy, warmth, and
-            beautiful memories.
+          <p className="text-lg text-pink-700 leading-relaxed mb-2">
+            สุขสันต์วันเกิดนะคะคนเก่ง! มีความสุขมาก ๆ นะคะ
+            ขอบคุณที่อยู่ด้วยกันมาตั้งแต่ต้นปีจนถึงตอนนี้เลยนะ อยู่กับเค้าไปนาน
+            ๆ นะคะ 💖
           </p>
 
-          <p className="text-lg text-pink-700 mt-4 leading-relaxed">
-            You are loved more than you know. ✨
+          <p className="text-lg text-pink-700 leading-relaxed mb-2">
+            ปีนี้เตรียมอะไรไม่ค่อยทัน กิกิ เอาอันนี้ไปแทนก่อนนะคะ ✨
+          </p>
+
+          <p className="text-lg text-pink-700 leading-relaxed mb-1 text-end">
+            รักนะคะ 💕
+          </p>
+          <p className="text-lg text-pink-700 leading-relaxed text-end">
+            tyty :)
           </p>
         </div>
       </div>
