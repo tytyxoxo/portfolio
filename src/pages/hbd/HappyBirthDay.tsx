@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function HappyBirthDay() {
-  // const targetDate = new Date("2025-11-24T00:00:00"); // 24 Nov 2568 BE
-  const targetDate = new Date(); // 24 Nov 2568 BE
+  const targetDate = new Date("2025-11-24T00:00:00"); // 24 Nov 2568 BE
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
