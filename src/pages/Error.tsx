@@ -1,5 +1,4 @@
 // src/pages/NotFound.tsx
-import React from "react";
 import FuzzyText from "@/components/ui/fuzzytext"; // adjust the path as needed
 import { Link } from "react-router-dom";
 

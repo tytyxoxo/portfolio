@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { getStoredTheme, setStoredTheme } from "@/lib/theme";
-import { AlignRight, Moon, Sun } from "lucide-react";
-import Button from "@/components/ui/button";
-import FileTree from "@/components/ui/filetree";
-import { Drawer, DrawerContent, DrawerOverlay } from "@/components/ui/drawer";
-import { Topbar } from "./Topbar";
+// import { AlignRight, Moon, Sun } from "lucide-react";
+// import Button from "@/components/ui/button";
+// import FileTree from "@/components/ui/filetree";
+// import { Drawer, DrawerContent, DrawerOverlay } from "@/components/ui/drawer";
+// import { Topbar } from "./Topbar";
 import Loading from "@/components/ui/loading";
 import { useLocation } from "react-router-dom";
 

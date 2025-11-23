@@ -6,6 +6,7 @@ import LayoutWrapper from "./layouts/LayoutWrapper";
 import HappyBirthDay from "./pages/hbd/HappyBirthDay";
 import Password from "./pages/hbd/Password";
 import UnlockedGallery from "./pages/hbd/Unlocked";
+import Message from "./pages/hbd/Message";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/happybirthday" element={<HappyBirthDay />} />
         <Route path="/happybirthday/password" element={<Password />} />
         <Route path="/happybirthday/unlocked" element={<UnlockedGallery />} />
+        <Route path="/happybirthday/message" element={<Message />} />
         <Route path="*" element={<NotFound />} /> {/* 404 */}
       </Routes>
     </LayoutWrapper>

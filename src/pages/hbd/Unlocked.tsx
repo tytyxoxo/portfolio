@@ -1,22 +1,35 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import FEB from "../../assets/pic/feb.jpg";
+import MAR from "../../assets/pic/mar.jpg";
+import APR from "../../assets/pic/apr.jpg";
+import MAY from "../../assets/pic/may.jpg";
+import JUNE from "../../assets/pic/june.jpg";
+import JULY from "../../assets/pic/july.jpg";
+import AUG from "../../assets/pic/aug.jpg";
+import SEP from "../../assets/pic/sep.jpg";
+import OCT from "../../assets/pic/oct.jpg";
+import NOV from "../../assets/pic/nov.jpg";
+import { useNavigate } from "react-router-dom";
 
 const galleryData = [
   {
     name: "February",
-    img: "https://media.istockphoto.com/id/944812540/photo/mountain-landscape-ponta-delgada-island-azores.jpg?s=612x612&w=0&k=20&c=mbS8X4gtJki3gGDjfC0sG3rsz7D0nls53a0b4OPXLnE=",
+    img: FEB,
   },
-  { name: "March", img: "/images/mar.jpg" },
-  { name: "April", img: "/images/apr.jpg" },
-  { name: "May", img: "/images/may.jpg" },
-  { name: "June", img: "/images/jun.jpg" },
-  { name: "July", img: "/images/jul.jpg" },
-  { name: "August", img: "/images/aug.jpg" },
-  { name: "September", img: "/images/sep.jpg" },
-  { name: "October", img: "/images/oct.jpg" },
-  { name: "November", img: "/images/nov.jpg" },
+  { name: "March", img: MAR },
+  { name: "April", img: APR },
+  { name: "May", img: MAY },
+  { name: "June", img: JUNE },
+  { name: "July", img: JULY },
+  { name: "August", img: AUG },
+  { name: "September", img: SEP },
+  { name: "October", img: OCT },
+  { name: "November", img: NOV },
 ];
 
 export default function UnlockedGallery() {
+  const navigate = useNavigate();
+
   const [selectedMonth, setSelectedMonth] = useState<null | {
     name: string;
     img: string;
@@ -38,9 +51,6 @@ export default function UnlockedGallery() {
       <h1 className="text-4xl font-bold mb-6 text-pink-600 animate-pulse">
         Birthday Memories Gallery
       </h1>
-      <p className="text-lg mb-8 text-pink-700/80">
-        Click on a month to preview 🎉
-      </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full max-w-6xl">
         {galleryData.map((month) => (
@@ -71,7 +81,7 @@ export default function UnlockedGallery() {
           onClick={closeModal}
         >
           <div
-            className={`relative bg-white rounded-2xl p-6 max-w-lg w-full shadow-2xl transition-transform duration-300 ${
+            className={`relative bg-white rounded-2xl p-6 max-w-lg w-full shadow-2xl transition-transform max-h-[80vh] duration-300 ${
               showModal ? "scale-100" : "scale-90"
             }`}
             onClick={(e) => e.stopPropagation()}
@@ -86,13 +96,19 @@ export default function UnlockedGallery() {
               {selectedMonth.name}
             </h2>
             <img
+              className="w-full h-auto rounded-xl shadow-lg max-h-[60vh] object-cover"
               src={selectedMonth.img}
               alt={selectedMonth.name}
-              className="w-full h-auto rounded-xl shadow-lg"
             />
           </div>
         </div>
       )}
+      <button
+        onClick={() => navigate("/happybirthday/message")}
+        className="mt-10 px-6 py-3 bg-pink-500 text-white font-semibold rounded-lg shadow-md hover:bg-pink-600 transition"
+      >
+        Next →
+      </button>
     </div>
   );
 }
