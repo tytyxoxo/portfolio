@@ -12,7 +12,7 @@ export default function App() {
   return (
     <LayoutWrapper>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HappyBirthDay />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/happybirthday" element={<HappyBirthDay />} />
